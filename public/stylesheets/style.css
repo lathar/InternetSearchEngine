@@ -1,0 +1,12 @@
+.masthead .inner {
+	border-top: 4px solid #de5833;
+}
+.inner.cover {
+	margin: 0px auto;
+	text-align: center;
+	width: 70%;
+}
+.inner .settings {
+	float: right;
+	color: #a5a5a5;
+}

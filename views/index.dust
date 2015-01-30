@@ -5,28 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Search</title>
-    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/cover.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-    <div class="container">
-
-        <nav class="navbar navbar-default" role="navigation">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="/search">
-                Search {title}
-              </a>
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <a class="btn settings" href="#"><i class="glyphicon glyphicon-align-justify"></i></a>
             </div>
           </div>
-        </nav>
-        <form name="searchForm" method="post" action="/search">
-        <div class="row">
-          <input type="text" name="search" value=""/>
-          <input type="submit" name="searchSubmit"/>
+          <div class="inner cover">
+            <h1 class="cover-heading">DuckDuckGo</h1>
+            <div class="">
+            <form name="searchForm" method="post" action="/search" class="navbar-search" role="search">
+
+
+              <div class="input-group add-on">
+                <input type="text" class="form-control" placeholder="Search" name="search" id="srch-term">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit" name="searchSubmit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+              </div>
+            </form>
+            </div>
+          </div>
+          <div class="mastfoot">
+            <div class="inner">
+              {!<p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>!}
+            </div>
+          </div>
         </div>
-        </form>
-    </div>    
-    <script src="javascripts/jQuery.js"></script><script src="javascripts/bootstrap.min.js"></script>
+      </div>
+    </div>
+
+    <script src="javascripts/jQuery.js"></script><script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </body>
 </html>
